@@ -1,12 +1,19 @@
 #include <stdio.h>
-
+/**
+ * main - a program that prints size of various inputs
+ * Return: 0 (Success)
+ */
 int main(void)
 {
-printf("Size of char: %ld byte(s)\n", sizeof(char));
-printf("Size of int: %ld byte(s)\n", sizeof(int));
-printf("Size of long: %ld byte(s)\n", sizeof(long));
-printf("Size of long long: %ld byte(s)\n", sizeof(long long));
-printf("Size of float: %ld byte(s)\n", sizeof(float));
-return 0;
+	char a;
+	int b;
+	long int d;
+	long long int g;
+	float f;
+printf("Size of a char: %lu byte(s)\n", (unsigned long)sizeof(a));
+printf("Size of a int: %lu byte(s)\n", (unsigned long)sizeof(b));
+printf("Size of a long int: %lu byte(s)\n", (unsigned long)sizeof(d));
+printf("Size of a long long int: %lu byte(s)\n", (unsigned long)sizeof(g));
+printf("Size of a float: %lu byte(s)\n", (unsigned long)sizeof(f));
+return (0);
 }
-
