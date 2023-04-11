@@ -6,7 +6,7 @@
  *
  * Return: the int converted from string
  */
-int atoi(char *s)
+int atoi(const char *s)
 {
 	int i, d, n, len, f, digit;
 
