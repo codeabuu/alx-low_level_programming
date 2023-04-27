@@ -35,9 +35,11 @@ if (*head == NULL)
 *head = new;
 return (new);
 }
-
-for (; temp->next != NULL; temp = temp->next)
+while (temp->next)
+temp = temp->next;
 
 temp->next = new;
+
 return (new);
 }
+
