@@ -32,6 +32,7 @@ if (*head == NULL)
 return (new);
 }
 for (; temp->next != NULL; temp = temp->next)
+;
 
 temp->next = new;
 
