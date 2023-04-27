@@ -13,8 +13,9 @@ list_t *add_node(list_t **head, const char *str)
 {
 list_t *new;
 unsigned int len = 0;
+const char *c;
 
-for (const char *c = str; *c != '\0'; c++)
+for (c = str; *c != '\0'; c++)
 {
 len++;
 }
@@ -32,4 +33,3 @@ new->next = (*head);
 
 return (*head);
 }
-
