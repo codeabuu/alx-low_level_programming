@@ -7,7 +7,7 @@
 * @head: double pointer to the list_t list
 * @str: new string to add in the node
 *
-* Return: the addr of new element, 
+* Return: the addr of new element,
 */
 list_t *add_node(list_t **head, const char *str)
 {
@@ -22,7 +22,7 @@ len++;
 new = malloc(sizeof(list_t));
 if (!new)
 {
-return NULL;
+return (NULL);
 }
 
 new->str = strdup(str);
