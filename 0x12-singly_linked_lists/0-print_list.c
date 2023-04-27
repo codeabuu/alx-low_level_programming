@@ -9,17 +9,18 @@
 */
 size_t print_list(const list_t *h)
 {
-size_t f = 0;
-const list_t *current_node;
+	size_t s = 0;
 
-for (current_node = h; current_node != NULL; current_node = current_node->next)
+while (h)
 {
-if (!current_node->str)
+if (!h->str)
 printf("[0] (nil)\n");
 else
-printf("[%u] %s\n", current_node->len, current_node->str);
-f++;
+printf("[%u] %s\n", h->len, h->str);
+h = h->next;
+s++;
 }
 
-return (f);
+return (s);
 }
+
