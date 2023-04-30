@@ -8,9 +8,9 @@
  */
 size_t listint_len(const listint_t *h)
 {
-	size_t cnt = 0;
+	size_t cnt;
 
-	for (; h != NULL; cnt++)
+	for (cnt = 0; h != NULL; cnt++)
 	{
 		cnt++;
 		h = h->next;
