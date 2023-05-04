@@ -10,20 +10,25 @@ int i = 63;
 int count = 0;
 unsigned long int current;
 
-while (i >= 0) {
+while (i >= 0)
+{
 current = n >> i;
 
-if (current & 1) {
+if (current & 1)
+{
 _putchar('1');
 count++;
-} else if (count) {
+}
+else if (count)
+{
 _putchar('0');
 }
 
 i--;
 }
 
-if (!count) {
+if (!count)
+{
 _putchar('0');
 }
 }
