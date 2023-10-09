@@ -25,11 +25,13 @@ int binary_search_recursion(int *array, int value,
 	mid = (low + high) / 2;
 	printf("Searching in array: ");
 	for (i = low; i <= high; i++)
+	{
 		printf("%i", array[i]);
 		if (i < high)
 			printf(",");
 		else
-			print("\n");
+			printf("\n");
+	}
 	if (array[low] == value)
 		return ((int)low);
 
