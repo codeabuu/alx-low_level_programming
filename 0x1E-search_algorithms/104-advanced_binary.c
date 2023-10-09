@@ -65,7 +65,7 @@ int advanced_binary(int *array, size_t size, int value)
 	size_t low;
 	size_t high = size - 1;
 
-	low =0;
+	low = 0;
 	if (!array)
 		return (-1);
 
